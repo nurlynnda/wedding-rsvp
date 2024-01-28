@@ -55,7 +55,7 @@ class GuestController extends Controller
      * @param  \App\Models\Guest  $guest
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request)
+    public function show(Guest $guest)
     {
         return view('guests.show',compact('guest'));
     }
