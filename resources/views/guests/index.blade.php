@@ -27,7 +27,8 @@
                     <a href="{{ route('guests.edit',$guest->id) }}">Edit</a>
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    
+                    <button type="submit" style="background: none; border: none; padding: 0; margin: 0; color:white">Delete</button>
                     
                 </form>
             </div>

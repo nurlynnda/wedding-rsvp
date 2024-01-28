@@ -30,7 +30,7 @@
 
       <nav id="navbar" >
           <a  href="#hero">Home</a>
-          <a  href="#about">About</a>
+          <a  href="#about">Details</a>
           <a  href="#wishes">Wishes</a>
       </nav><!-- .navbar -->
   </header><!-- End Header -->
