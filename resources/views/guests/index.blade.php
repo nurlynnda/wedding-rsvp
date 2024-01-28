@@ -1,49 +1,41 @@
 @extends('guests.layout')
 
 @section('content')
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="pull-left">
-                <h2>Guest Lists</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('guests.create') }}"> Create New guest</a>
-            </div>
-        </div>
-    </div>
-
-    @if ($message = Session::get('success'))
+@if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p>{{ $message }}</p>
         </div>
     @endif
+<section id="wishes" class="services section-bg">
+      <div class="container" data-aos="fade-up">
 
-    <table class="table table-bordered">
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Details</th>
-            <th width="280px">Action</th>
-        </tr>
+        <div class="section-title">
+          <h2>Wishes</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+        </div>
         @foreach ($guests as $guest)
-        <tr>
-            <td>{{ $guest->id }}</td>
-            <td>{{ $guest->name }}</td>
-            <td>{{ $guest->wish }}</td>
-            <td>
-                <form action="{{ route('guests.destroy',$guest->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('guests.show',$guest->id) }}">Show</a>
-                    <a class="btn btn-primary" href="{{ route('guests.edit',$guest->id) }}">Edit</a>
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">{{ $guest->name }}</a></h4>
+              <p>{{ $guest->wish }}</p>
+              <br>
+              <form action="{{ route('guests.destroy',$guest->id) }}" method="POST">
+                    <a href="{{ route('guests.show',$guest->id) }}">Show</a>
+                    <a href="{{ route('guests.edit',$guest->id) }}">Edit</a>
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
-            </td>
-        </tr>
-        @endforeach
+            </div>
+          </div>
+          @endforeach
 
-    </table>
-    {{ $guests->links() }}
+        </div>
+        {{ $guests->links() }}
+      </div>
 
 
 @endsection
