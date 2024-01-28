@@ -1,29 +1,17 @@
 @extends('guests.layout')
 
 @section('content')
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2> Show guest</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('guests.index') }}"> Back</a>
-            </div>
-        </div>
-    </div>
+<footer id="footer">
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Name:</strong>
-                {{ $guest->name }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Wish:</strong>
-                {{ $guest->wish }}
-            </div>
-        </div>
+<div class="footer-newsletter">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h4>{{ $guest->name }}</h4>
+        <p>{{ $guest->wish }}</p>
+        <a class="btn btn-primary" href="{{ route('guests.index') }}"> Back</a>
+      </div>
     </div>
+  </div>
+</div>
 @endsection

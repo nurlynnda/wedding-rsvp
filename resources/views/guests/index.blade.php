@@ -11,8 +11,8 @@
 
         <div class="section-title">
           <h2>Wishes</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-
+          <p>Welcome to our home away from home! We'd love to hear about your adventures, recommendations, or simply a warm greeting. Your entries will become a part of our cherished memories here.</p>
+          
         </div>
         @foreach ($guests as $guest)
         <div class="row">
@@ -28,6 +28,7 @@
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>
+                    
                 </form>
             </div>
           </div>

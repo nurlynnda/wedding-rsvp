@@ -26,17 +26,13 @@
 
    <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
+    <a href="#" id="logo">A&L</a>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#wishes">Wishes</a></li>
-        </ul>
+      <nav id="navbar" >
+          <a  href="#hero">Home</a>
+          <a  href="#about">About</a>
+          <a  href="#wishes">Wishes</a>
       </nav><!-- .navbar -->
-
-    </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
@@ -45,10 +41,14 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>You Are Invited</h1>
-          <h2>AAAA Jemput jemput datanggg jangan tak datang orang dah jemputttt</h2>
+          <h1>Wedding Invitation</h1>
+          <br>
+          <br>
+          <h2>AZIZAH MYSARAH BINTI MOHAMMAD HOOD &
+            LUQMAN NUL HAKIM BIN ROSLIZA</h2>
+          <P>Will be deeply honoured by your gracious presence to share with us the joy that fills our hearts on splendid & festive of our wedding ceremony.</P>
           <div class="d-flex justify-content-center justify-content-lg-start">
-          <a class="btn-get-started scrollto" href="{{ route('guests.create') }}">Send Us Message</a>
+          <a class="btn-get-started scrollto" href="{{ route('guests.create') }}">Sign Our Guestbook</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-1 hero-img"  data-aos-delay="200">
@@ -64,24 +64,34 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About Us</h2>
+          <h2>Event Details</h2>
         </div>
 
         <div class="row content">
           <div class="col-lg-6">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
+            With the permission of Allah, the Most Compassionate and Most Merciful, with hearts filled with gratitude, we,</p>
+<p><b>Teacher Mohammad Hood bin Md. Noh
+&
+Teacher Norhana binti Yusof</b></p>
+
+<p>Request the honor of the presence of Dato’ / Datin / Mr. / Mrs. / Mr. / Miss / Husband and Wife, and family to the Solemnization Ceremony of our beloved child,</p>
+
+<p><b>AZIZAH MYSARAH BINTI MOHAMMAD HOOD
+
+and her partner
+
+LUQMAN NUL HAKIM BIN ROSLIZA
+           </b> </p>
             
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
+            <p><b>Date: </b>Saturday, 17th February 2024</p>
+            <p><b>Venue:</b>No 11, C Lot 2696 Kampung Mesjid 81500 Pekan Nenas, Johor</p>
+            <p><b>بسم الله الرحمن الرحيم</b></p>
+<p>"Allah, We ask for your blessings... Bless this wedding ceremony, 
+  Walk perfectly as you wish, And may this marriage partner last forever until the end of life. Amen, Ya Rabbal Alamin…”</p>
+            <a href="https://maps.app.goo.gl/panRLD77r3W4SCim9" class="btn-learn-more">Location</a>
           </div>
         </div>
 

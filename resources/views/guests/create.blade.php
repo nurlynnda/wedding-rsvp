@@ -24,16 +24,18 @@
             <div class="col-xl-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
             </div>
-            
+            <a class="btn btn-primary" href="{{ route('guests.index') }}"> Back</a>
           </div>
           
           <div class="form-group">
             <textarea class="form-control" name="wish" rows="5" placeholder="Your Wish" required></textarea>
           </div>
           
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="btn-get-started scrollto"><button type="submit">Send Message</button></div>
+         
         </form><!--End Contact Form -->
 
       </div>
     </section><!-- End Contact Section -->
 @endsection
+
